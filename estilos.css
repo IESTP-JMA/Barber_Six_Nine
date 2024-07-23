@@ -1,0 +1,31 @@
+body {
+    background: url('path-to-your-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.login-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box {
+    background: url(./images/v0_131.png) no-repeat center center fixed;
+    background-size: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 800px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login-box h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3rem;
+    font-size: 66px;
+    padding-bottom: 210px;
+    padding-top: 100px;
+}
+.login-box .form-control {
+    margin-bottom: 10px;
+}
