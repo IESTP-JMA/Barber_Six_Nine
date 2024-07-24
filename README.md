@@ -7,7 +7,7 @@ Unos de los problemas mas frecuentes en las barberias es que los clientes se acu
 La solucion que estamos dando con nuestra app es mejorar los tiempos de reservacion o citas a la barberia, con la app podremos ver que dias esta ocupado asi escoger otro dia que este disponible tambien ofrecemos las calificaciones del barbero de acuerdo con la experiencia del usuario como tambien un mapa donde muestre las barberias mas cercanas y recomendadas. 🤣👌
 ## Integrantes
 - Crhistian Alexis Bautista Poma
-- Orlando Lopez Santaria
+- Orlando Lopez Santaria 😎
 - Edwin Ramos Aguilar
 - Hans Alex Espinoza Diaz
 - Jhonatan Flores Cupe
