@@ -9,5 +9,5 @@ La solucion que estamos dando con nuestra app es mejorar los tiempos de reservac
 - Crhistian Alexis Bautista Poma
 - Orlando Lopez Santaria
 - Edwin Ramos Aguilar
-- Hans Espinoza Diaz
+- Hans Alex Espinoza Diaz
 - Jhonatan Flores Cupe
