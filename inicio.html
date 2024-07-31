@@ -19,9 +19,10 @@
         .container {
             max-width: 400px;
             width: 90%;
-            padding: 10;
+            padding: 0;
         }
         .header {
+            position: relative;
             background-image: url('https://joseppons.com/formacion/wp-content/uploads/2020/11/servicios-salon-barberia.jpeg'); /* Reemplaza con la imagen de la cabecera */
             background-size: cover;
             background-position: center;
@@ -35,6 +36,18 @@
         }
         .header h1 {
             font-size: 2.5rem;
+            margin: 0;
+        }
+        .header a {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
         }
         .content {
             padding: 20px;
@@ -54,21 +67,23 @@
             border-radius: 10px;
             width: 100%;
             height: 500px;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
+            <a href="./index.html">&larr; Atrás</a>
             <h1>Bienvenido</h1>
         </div>
         <div class="content">
             <button type="button" class="btn btn-primary mb-3">
                 <i class="bi bi-calendar"></i> Citas
             </button>
-            <h3>Cerca de tu ubicación</h3>
+            <h3><a href="./cerca_de_t_i1.html">Cerca de tu ubicación</a></h3>
             <div class="card">
-                <img src="https://static1.s123-cdn-static-a.com/ready_uploads/media/8698875/800_60d1e413bcc53.jpg" class="img-fluid" alt="Barbería" height="100">
+                <img src="https://st2.depositphotos.com/1001951/7784/i/450/depositphotos_77841548-stock-photo-clients-chair-in-barber-shop.jpg" class="img-fluid" alt="Barbería">
             </div>
         </div>
     </div>
