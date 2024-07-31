@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Usuario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .back-button{
+            m
+        }
+        .agenda-container {
+            width: 350px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .agenda-header {
+            background-color: #FF8C42;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .agenda-header h2 {
+            margin: 0;
+        }
+        .agenda-body {
+            padding: 20px;
+        }
+        .appointment {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .appointment:last-child {
+            border-bottom: none;
+        }
+        .appointment-info {
+            flex-grow: 1;
+        }
+        .appointment-time {
+            margin-right: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+        .appointment-details {
+            font-size: 16px;
+            color: #333;
+        }
+        .appointment-button {
+            background-color: #FF8C42;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="agenda-container">
+        <div class="agenda-header">
+            <div class="profile-header">
+                <div class="back-button">&larr; Atrás</div>
+            <h2>Agenda de Ernesto Cabrera</h2>
+        </div>
+        <div class="agenda-body">
+            <div class="appointment">
+                <div class="appointment-info">
+                    <div class="appointment-time">10:00 AM</div>
+                    <div class="appointment-details">Corte de Cabello - Cliente: Juan Pérez</div>
+                </div>
+                <button class="appointment-button">Detalles</button>
+            </div>
+            <div class="appointment">
+                <div class="appointment-info">
+                    <div class="appointment-time">11:30 AM</div>
+                    <div class="appointment-details">Afeitado - Cliente: Luis García</div>
+                </div>
+                <button class="appointment-button">Detalles</button>
+            </div>
+            <div class="appointment">
+                <div class="appointment-info">
+                    <div class="appointment-time">1:00 PM</div>
+                    <div class="appointment-details">Tinte de Cabello - Cliente: María López</div>
+                </div>
+                <button class="appointment-button">Detalles</button>
+            </div>
+            <div class="appointment">
+                <div class="appointment-info">
+                    <div class="appointment-time">3:00 PM</div>
+                    <div class="appointment-details">Corte de Cabello - Cliente: Carlos Rodríguez</div>
+                </div>
+                <button class="appointment-button">Detalles</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
