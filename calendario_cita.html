@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cita</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .header {
+            position: relative;
+            height: 200px;
+            background-image: url('https://revistacoiffure.com/wp-content/uploads/2021/06/received_1952931631462549-1024x684.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        .header a {
+            color: white;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-top: -50px;
+            border: 5px solid white;
+            position: relative;
+            z-index: 10;
+        }
+        .profile-info {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .profile-info h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .legend {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .legend span {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .legend .unavailable {
+            width: 12px;
+            height: 12px;
+            background-color: #ffcccc;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .legend .available {
+            width: 12px;
+            height: 12px;
+            background-color: #b3e6b3;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .calendar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .calendar table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+        .calendar td, .calendar th {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .calendar th {
+            background-color: #f0f0f0;
+        }
+        .calendar .unavailable {
+            background-color: #ffcccc;
+        }
+        .calendar .available {
+            background-color: #b3e6b3;
+        }
+        .calendar .selected {
+            background-color: #87CEFA;
+        }
+        .btn-reservar {
+            display: none;
+            width: 100%;
+            padding: 10px;
+            background-color: #f7941e;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="#">&larr; Atrás</a>
+        </div>
+        <div class="profile-info">
+            <img src="https://www.buenamusica.com/media/fotos/cantantes/biografia/6ix9ine.jpg" alt="Profile Picture" class="profile-pic">
+            <h2>six nine</h2>
+        </div>
+        <div class="legend">
+            <span><span class="unavailable"></span> Sin disponibilidad</span>
+            <span><span class="available"></span> Tu cita</span>
+        </div>
+        <div class="calendar">
+            <h3>Enero 2022</h3>
+            <table id="calendar-table">
+                <thead>
+                    <tr>
+                        <th>Lun</th>
+                        <th>Mar</th>
+                        <th>Mié</th>
+                        <th>Jue</th>
+                        <th>Vie</th>
+                        <th>Sab</th>
+                        <th>Dom</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="unavailable">1</td>
+                        <td class="unavailable">2</td>
+                        <td class="unavailable">3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="available">7</td>
+                        <td>8</td>
+                        <td class="unavailable">9</td>
+                        <td class="unavailable">10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>13</td>
+                        <td class="unavailable">14</td>
+                        <td class="unavailable">15</td>
+                        <td class="unavailable">16</td>
+                        <td>17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td class="unavailable">27</td>
+                        <td class="unavailable">28</td>
+                        <td class="unavailable">29</td>
+                        <td class="unavailable">30</td>
+                        <td class="available">31</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn-reservar" id="btn-reservar"><a href="./inicio.html">Reservar</a></button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#calendar-table td').click(function() {
+                if (!$(this).hasClass('unavailable')) {
+                    $('#calendar-table td').removeClass('selected');
+                    $(this).addClass('selected');
+                    $('#btn-reservar').fadeIn();
+                } else {
+                    $('#btn-reservar').fadeOut();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
