@@ -10,6 +10,6 @@ La solucion que estamos dando con nuestra app es mejorar los tiempos de reservac
 |-------------------|------------------- |
 |Crhistian Alexis Bautista Poma|https://github.com/AstaGod
 |Orlando Lopez Santaria |https://github.com/lopeznando
-|Edwin Ramos Aguilar|https://github.com/edwin24pro
+|Edwin Ramos Aguilar|[edwin24pro](https://github.com/edwin24pro)
 |Hans Alex Espinoza Diaz|https://github.com/axelyadieldiaz
 |Jhonatan Flores Cupe|https://github.com/jhonatan-flores
